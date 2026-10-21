@@ -260,14 +260,21 @@ const SOCIALS = [
    badge: "new", "sale" or "" | old: crossed-out price (optional)
    If a photo is missing, a built-in placeholder is shown instead.
    ================================================================== */
-const PRODUCTS = [ 
+
+const PRODUCTS = [
  {id:1,name:"Black Baggy Pants",price:3500,img:"Images/black-baggy-pants.jpg",color:"Black",hex:"#1d1d1d",cat:"baggy",badge:"new",sizes:[28,30,32,34,36],desc:"Relaxed wide-leg baggy pants in deep black. Easy to style with tees, hoodies or shirts."},
- {id:2,name:"Blue Baggy Pants",price:3500,old:3900,img:"Images/blue-baggy-pants.jpg",color:"Blue",hex:"#3f6fb4",cat:"baggy",badge:"sale",sizes:[28,30,32,34,36],desc:"Classic mid-blue wash with a loose baggy fit and a comfortable high waist."}
+
+ {id:2,name:"Blue Baggy Pants",price:3500,old:3900,img:"Images/blue-baggy-pants.jpg",color:"Blue",hex:"#3f6fb4",cat:"baggy",badge:"sale",sizes:[28,30,32,34,36],desc:"Classic mid-blue wash with a loose baggy fit and a comfortable high waist."},
+
  {id:3,name:"Navy Blue Baggy Pants",price:3700,img:"Images/navy-baggy-pants.jpg",color:"Navy Blue",hex:"#1e2d52",cat:"baggy",badge:"new",sizes:[28,30,32,34,36],desc:"Deep navy baggy pants that look sharp for casual and street style."},
+
  {id:4,name:"Sky Baggy Pants",price:3700,img:"Images/sky-baggy-pants.jpg",color:"Sky",hex:"#93c5e8",cat:"baggy",badge:"",sizes:[28,30,32,34,36],desc:"Light sky-blue baggy pants with a soft, relaxed drape for warm days."},
+
  {id:5,name:"Black Cargo Pants",price:3999,img:"Images/black-cargo-pants.jpg",color:"Black",hex:"#252525",cat:"cargo",badge:"new",sizes:[28,30,32,34,36],desc:"Utility cargo pants in black with roomy pockets and a relaxed fit."},
+
  {id:6,name:"Grey Baggy Pants",price:3500,img:"Images/grey-baggy-pants.jpg",color:"Grey",hex:"#8c8c8c",cat:"baggy",badge:"",sizes:[28,30,32,34,36],desc:"Neutral grey baggy pants that pair with almost everything."}
 ];
+
 /* ===================== Helpers ===================== */
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
 const fmt=n=>"PKR "+n.toLocaleString("en-US");
