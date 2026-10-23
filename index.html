@@ -34,31 +34,27 @@ header{position:sticky;top:0;z-index:40;background:var(--white);border-bottom:1p
 .sbar.open{max-height:70px}
 .sbar input{width:100%;margin:10px 0;padding:11px 14px;border:1px solid var(--line);background:var(--white)         
 .hero {
-  background-image:
-    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
-    url('Images/fashion-background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  animation: heroSlides 16s infinite;
+  background:
+    linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),
+    url('images/fashion-background.jpg') center/cover no-repeat;
   text-align: center;
   padding: 48px 16px;
 }
 
-@keyframes heroSlides {
-  0%, 24% {
-    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url('Images/fashion-background.jpg');
-  }
-  25%, 49% {
-    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url('Images/fashion-background-2.jpg');
-  }
-  50%, 74% {
-    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url('Images/fashion-background-3.jpg');
-  }
-  75%, 100% {
-    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url('Images/fashion-background-4.jpg');
-  }
+.hero h1 {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: clamp(2.2rem, 9vw, 4.4rem);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1;
 }
+
+.hero p {
+  color: var(--mute);
+  margin: 12px auto 22px;
+  max-width: 420px;
+}
+
             
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border:1px solid var(--ink);background:var(--ink);color:var(--white);font-size:.85rem;letter-spacing:.05em;transition:.2s;max-width:100%;min-height:44px}
 .btn:hover{background:var(--white);color:var(--ink)}
