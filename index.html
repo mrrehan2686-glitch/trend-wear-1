@@ -161,7 +161,38 @@ footer a:hover{color:#fff}
 </style>
 </head>
 <body>
-<div class="bar">Free Shipping Across Pakistan 🇵🇰</div>
+
+<div class="trend-ticker">
+  <div class="trend-ticker-track">
+    <span>TREND WEAR ★ BAGGY FITS. BOLD MOVES. ★ FREE SHIPPING ACROSS PAKISTAN 🇵🇰 ★</span>
+    <span>TREND WEAR ★ BAGGY FITS. BOLD MOVES. ★ FREE SHIPPING ACROSS PAKISTAN 🇵🇰 ★</span>
+  </div>
+</div>
+
+<style>
+.trend-ticker {
+  background: #000;
+  color: #d4af37;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 12px 0;
+}
+.trend-ticker-track {
+  display: flex;
+  width: max-content;
+  animation: trendScroll 20s linear infinite;
+}
+.trend-ticker-track span {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-right: 30px;
+}
+@keyframes trendScroll {
+  to { transform: translateX(-50%); }
+}
+</style>
+ 
 <header>
  <div class="wrap hd">
   <div class="hl">
